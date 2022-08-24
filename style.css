@@ -1,0 +1,15 @@
+nav {
+    display: inline-flex;
+    height: 100px;
+    background-color: aliceblue;
+    color: red;
+    width: 100%;
+
+}
+
+.right {
+    width: 600px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
