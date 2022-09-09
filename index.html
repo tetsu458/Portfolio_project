@@ -5,44 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>TetsuFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Rampart+One&display=swap" rel="stylesheet">
+    <!-- Font Lobster, Pacifico, Rampart One -->
+    <title>DomoFolio</title>
 
     <!-- Portfolio project from Codecademy, example web is here https://priceless-kepler-06d70c.netlify.app/ -->
 </head>
 <body>
     <header>
         <nav>
-            <img id="logo" src="./gallery/logo.jpg" alt="random photo for logo">
-
-            <section id="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </section>
+            <h2 id="logo">DomoFolio</h2>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
+    </header>
+    <main>
         <div id="headline">
-            <section id="head">
+            <section id="heading">
                 <h1>TetsuFolio</h1>
                 <p>Here's what Tetsuya is made of and what he built so far, with some of his random NFT collection...</p>
             </section>
-            <section class="pic-container">
-                <!-- ADDITIONAL? One of below img will be displayed -->
-                <img class="tabcontent" id="default-pic" src="./gallery/espada.png" alt="">
-                <!-- 
-                <img class="tabcontent" src="./gallery/bubble_tea_guy.png" alt="">
-                <img class="tabcontent" src="./gallery/purple_guy.png" alt="">
-                <img class="tabcontent" src="./gallery/turtle.png" alt="">
-                <img class="tabcontent" src="./gallery/vampire.png" alt=""> 
-                -->
-                <p class="caption">One of his NFT collection...</p>
-            </section>
+            <div class="pfp-container">
+                <section class="img-container">
+                    <!-- ADDITIONAL? One of below img will be displayed -->
+                    <img class="tab-content" id="default-pic" src="./gallery/espada.png" alt="">
+                    <!-- 
+                    <img class="tab-content" src="./gallery/bubble_tea_guy.png" alt="">
+                    <img class="tab-content" src="./gallery/purple_guy.png" alt="">
+                    <img class="tab-content" src="./gallery/turtle.png" alt="">
+                    <img class="tab-content" src="./gallery/vampire.png" alt=""> 
+                    -->
+                </section>
+                <p>One of his NFT collection...</p>
+                <p>You wanna see other...?</p>
+                <input type="button" value="CHANGE">
+            </div>
+            
         </div>
-        
-        
-        
-    </header>
-    <main>
-        
+
+        <div class="subscribe">
+
+        </div>
     </main>
+        
+        
+        
+        
+
 </body>
 </html>

@@ -1,47 +1,68 @@
-/* reset style */
-html, body, div {
-	margin: 0;
+/* Reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    text-decoration: none;
+
+}
+
+html {
+    box-sizing: border-box;
 }
 
 body {
-    background-color: black;
     font-size: 24px;
-    color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Lobster";
 }
 
 /* header */
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: #0d3f67;
+    color: #f2f4f6;
     width: 100%;
     height: 70px;
-    font-size: 24px;
+    font-size: 2rem;
     align-items: center;
     position: fixed;
     top: 0px;
     z-index: 10;
+    font-family: "Rampart One";
 }
 
 #logo {
-    width: 110px;
-    height: 60px;
+    flex: 1;
     margin-left: 20px;
 }
 
-#nav-links {
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
     margin-right: 20px;
 }
 
 nav a {
     padding: 5px 10px;
-    font-family: Helvetica, sans-serif;
+    color: #f2f4f6;
+
 }
 
 
@@ -51,40 +72,52 @@ h1 {
 }
 
 #headline {
-    position: relative;
-    top: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-#head {
+#heading {
     max-width: 800px;
     display: inline-block;
     margin: 100px auto;
     padding: 30px;
 }
 
-.pic-container {
-    background-color: grey;
-    width: 320px;
-    height: 380px;
-    margin: 30px auto;
-    border-radius: 5px;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
+.pfp-container {
+    width: 35%;
+    margin-right: 30px;
 }
 
-#default-pic {
+
+.img-container {
+    width: 300px;
+    height: auto;
+    margin: 5px auto;
+    border-radius: 5px;
+
+}
+
+.tab-content {
     width: 300px;
     height: 300px;
     margin: auto;
     border-radius: 5px;
 }
 
-.caption {
-    font-size: 16px;
+.pfp-container input {
+    background-color: #0d3f67;
+    font-family: "Rampart One";
+    font-size: 1.25rem;
+    border: 1px solid #f2f4f6;
+    color: #f2f4f6;
+    border-radius: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 /* main */
