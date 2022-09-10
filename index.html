@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Rampart+One&display=swap" rel="stylesheet">
     <!-- Font Lobster, Pacifico, Rampart One -->
+
+
     <title>DomoFolio</title>
 
     <!-- Portfolio project from Codecademy, example web is here https://priceless-kepler-06d70c.netlify.app/ -->
@@ -25,7 +27,7 @@
     <main>
         <div id="headline">
             <section id="heading">
-                <h1>TetsuFolio</h1>
+                <h1>DomoFolio</h1>
                 <p>Here's what Tetsuya is made of and what he built so far, with some of his random NFT collection...</p>
             </section>
             <div class="pfp-container">
@@ -41,11 +43,28 @@
                 </section>
                 <p>One of his NFT collection...</p>
                 <p>You wanna see other...?</p>
-                <input type="button" value="CHANGE">
+                <button type="button" id="swap">CHANGE!!</button>
+            </div>
+        </div>
+
+        <div class="color-picker">
+            <h2>Color Picker</h2>
+            <div class="flex-container">
+                <div class="left-container">
+                    <h3>Click the button and it will give yo u three random colors</h3>
+                    <button type="button" id="spell">CAST A SPELL!</button>
+                </div>
+                <div class="right-container">
+                    <h3>Color palette</h3>
+                    <div class="circle-container">
+                        <div class="circle first"></div>
+                        <div class="circle second"></div>
+                        <div class="circle third"></div>
+                    </div>
+                </div>
             </div>
             
         </div>
-
         <div class="subscribe">
 
         </div>
@@ -53,7 +72,8 @@
         
         
         
-        
+    <script src="./main.js"></script>
+
 
 </body>
 </html>
